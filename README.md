@@ -14,16 +14,17 @@ This Ansible and Vagrant setup creates a bridged VM OpenVPN server on your local
 All this project truly does is provides the "simulated" hardware needed to run this server.
 The installation method is meant for a Debian system, and Vagrant/Virtualbox provides this, Ubuntu 14/16.
 
-**Bridge**
-open the Vagrantfile and set the correct "BRIDGE_IFACE" variable:
-I'm testing on a Macbook, so it's bridge is en0.
+**Setting the correct bridge interface:**
+Open the Vagrantfile and set the correct "BRIDGE_IFACE" variable:
+I'm testing on a Macbook, so it's bridge is "en0: Wi-Fi (AirPort)"
 
 To run:
 ```
 vagrant up
 vagrant ssh
 ```
-Once inside the machine:
+
+Once inside the Vagrant machine:
 ```
 vagrant@vpn1: $ sudo su -
 root@vpn1: # cd /tmp/
