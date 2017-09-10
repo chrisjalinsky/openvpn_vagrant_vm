@@ -1,7 +1,7 @@
 # PiVPN Vagrant Box Testing
 
 All credit goes to this awesome project:
-(http://www.pivpn.io)[http://www.pivpn.io/]
+[http://www.pivpn.io](http://www.pivpn.io/)
 
 ## Vagrant and Ansible
 
