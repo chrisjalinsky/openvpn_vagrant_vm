@@ -1,0 +1,15 @@
+---
+
+- name: Install VPN server
+  hosts: vpn_hosts
+  become: yes
+  become_user: root
+  tasks:
+    - name: Copy install script
+      get_url:
+        url: "https://install.pivpn.io"
+        dest: "/tmp/install_vpn.sh"
+        mode: "0700"
+        owner: root
+        group: root
+        validate_certs: no

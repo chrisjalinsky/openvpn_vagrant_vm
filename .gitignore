@@ -1,0 +1,8 @@
+*.vdi
+.vagrant
+.vagrant/*
+*.retry
+.DS_Store
+.idea
+.idea/*
+*.pyc
